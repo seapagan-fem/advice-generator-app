@@ -24,13 +24,67 @@
 
 body {
   font-size: 2.8rem;
+  background-color: var(--dark-blue);
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-grayish-blue);
+  margin: 120px 16px 32px 16px;
+  padding: 40px 24px 64px 24px;
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  color: var(--neon-green);
+  align-items: center;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 3.45714px;
+}
+
+header h1 {
+  font-size: inherit;
+}
+
+.advice {
+  color: var(--light-cyan);
+  font-size: 2.4rem;
+  text-align: center;
+  line-height: 33px;
+  letter-spacing: -0.257143px;
+  margin: 24px 0;
+}
+
+.divider {
+  background-image: url(../images/pattern-divider-mobile.svg);
+  width: 100%;
+  height: 16px;
+}
+
+.advice-button {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--neon-green);
+  bottom: -32px;
 }
 
 /* ---------------------------- style attribution --------------------------- */
 .attribution {
+  padding-top: 16px;
   font-size: 11px;
   text-align: center;
+  color: var(--light-cyan);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  color: var(--grayish-blue);
+  text-decoration: none;
 }
